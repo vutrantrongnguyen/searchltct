@@ -16,7 +16,7 @@ class Cors
     public function handle($request, Closure $next)
     {
         header("Access-Control-Allow-Origin: *");
-        header("Access-Control-Allow-Credentials: true");
+        header("Access-Control-Allow-Credentials: false");
         //ALLOW OPTIONS METHOD
         $headers = [
             'Access-Control-Allow-Methods' => 'POST,GET,OPTIONS,PUT,DELETE',
