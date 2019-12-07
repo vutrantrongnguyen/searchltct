@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Search;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
 class SearchController extends Controller
 {
@@ -30,6 +31,7 @@ class SearchController extends Controller
         session(['user_id'=>$user_id]);
         $session_id = $request->query('session_id');
         session(['session_id'=>$session_id]);
-        return redirect('/');
+//        return redirect('/');
+        return Redirect::to('http://52.87.98.116/#/dashboard');
     }
 }
