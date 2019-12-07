@@ -20,3 +20,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('/search/{id}','SearchController@show');
 
 Route::post('/search/{id}','SearchController@update');
+Route::get('/setsession','SearchController@setsession');

@@ -24,4 +24,12 @@ class SearchController extends Controller
         $search = Search::findOrFail($id);
         return $search;
     }
+    public function setsession(Request $request)
+    {
+        $user_id = $request->query('user_id');
+        session(['user_id'=>$user_id]);
+        $session_id = $request->query('session_id');
+        session(['session_id'=>$session_id]);
+        return redirect('/');
+    }
 }
