@@ -82,7 +82,7 @@
             <div class="content">
                 <div class="title m-b-md">
 {{--                    Laravel--}}
-                    <a href="http://secure-mountain-93147.herokuapp.com/requirelogin?url=https://nhom6qtch.herokuapp.com">Login</a>
+                    <a href="http://secure-mountain-93147.herokuapp.com/requirelogin?url=https://nhom7qtch.herokuapp.com">Login</a>
                 </div>
 
                 <div class="links">
